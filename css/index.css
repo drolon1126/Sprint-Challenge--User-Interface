@@ -71,6 +71,11 @@ p {
     margin: 0 auto;
 }
 
+@keyframes fadein{
+    0% { opacity: 0 }
+    100% { opacity: 1; }
+}
+
 /*~~~~~~~
 Header
 ~~~~~~~*/
@@ -109,6 +114,11 @@ Main
 ~~~~~~~*/
 
 .top-content {
+    opacity: 0;
+    animation: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -127,6 +137,11 @@ Main
 }
 
 .middle-content {
+    opacity: 0;
+    animation: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -229,6 +244,11 @@ Main
 
 
 .bottom-content {
+    opacity: 0;
+    animation: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
