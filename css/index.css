@@ -115,6 +115,10 @@ Main
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+.top-content.about div{
+    width:95%;
+    padding-bottom: 20px;
+}
 
 .top-content .text-container {
     width: 48%;
@@ -180,6 +184,38 @@ Main
     background: dodgerblue;
 }
 
+.middle-content.about{
+    border: none;
+
+}
+.middle-content.about .boxes{
+    justify-content: space-between;
+}
+.middle-content.about h2{
+    padding: 0;
+}
+
+.middle-content.about .test{
+    width:50%;
+    padding: 10px;
+    border-bottom: 1px dashed black;    
+}
+.middle-content.about .test div{
+    padding: 20px 0;
+}
+.middle-content.about a{
+    text-decoration: none;
+    color:black;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 8px 25px;
+}
+.middle-content.about p{
+    margin: 10px 0 30px 0;
+}
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -192,6 +228,13 @@ Main
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.bottom-content.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px 2%;
 }
 
 /*~~~~~~~
