@@ -71,6 +71,43 @@ p {
     margin: 0 auto;
 }
 
+/*~~~~~~~
+Header
+~~~~~~~*/
+header nav{
+    display: flex;
+    justify-content: start;
+    padding: 20px 20px 20px 0;
+    align-items: baseline;
+}
+header nav .links{
+    display: flex;
+    justify-content: space-around;
+    width:80%;
+    padding: 5px;
+}
+header nav .logo{
+    width: 20%;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: lightgrey;
+}
+
+header .hero{
+    margin: 10px 0 20px 0;
+}
+
+/*~~~~~~~
+Main
+~~~~~~~*/
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +149,37 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box.teal{
+    background: teal;
+}
+.middle-content .boxes .box.gold{
+    background: gold;
+}
+.middle-content .boxes .box.cadetblue{
+    background: cadetblue;
+}
+.middle-content .boxes .box.coral{
+    background: coral;
+}
+.middle-content .boxes .box.crimson{
+    background: crimson;
+}
+.middle-content .boxes .box.forestgreen{
+    background: forestgreen;
+}
+.middle-content .boxes .box.darkorchid{
+    background: darkorchid;
+}
+.middle-content .boxes .box.hotpink{
+    background: hotpink;
+}
+.middle-content .boxes .box.indigo{
+    background: indigo;
+}
+.middle-content .boxes .box.dodgerblue{
+    background: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,6 +193,10 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/*~~~~~~~
+Footer
+~~~~~~~*/
 
 footer {
     width: 100%;
