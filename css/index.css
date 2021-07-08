@@ -71,12 +71,63 @@ p {
     margin: 0 auto;
 }
 
+@keyframes fadein{
+    0% { opacity: 0 }
+    100% { opacity: 1; }
+}
+
+/*~~~~~~~
+Header
+~~~~~~~*/
+header nav{
+    display: flex;
+    justify-content: start;
+    padding: 20px 20px 20px 0;
+    align-items: baseline;
+}
+header nav .links{
+    display: flex;
+    justify-content: space-around;
+    width:80%;
+    padding: 5px;
+}
+header nav .logo{
+    width: 20%;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: lightgrey;
+}
+
+header .hero{
+    margin: 10px 0 20px 0;
+}
+
+/*~~~~~~~
+Main
+~~~~~~~*/
+
 .top-content {
+    opacity: 0;
+    animation: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+.top-content.about div{
+    width:95%;
+    padding-bottom: 20px;
 }
 
 .top-content .text-container {
@@ -86,6 +137,11 @@ p {
 }
 
 .middle-content {
+    opacity: 0;
+    animation: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -112,7 +168,87 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box.teal{
+    background: teal;
+}
+.middle-content .boxes .box.gold{
+    background: gold;
+}
+.middle-content .boxes .box.cadetblue{
+    background: cadetblue;
+}
+.middle-content .boxes .box.coral{
+    background: coral;
+}
+.middle-content .boxes .box.crimson{
+    background: crimson;
+}
+.middle-content .boxes .box.forestgreen{
+    background: forestgreen;
+}
+.middle-content .boxes .box.darkorchid{
+    background: darkorchid;
+}
+.middle-content .boxes .box.hotpink{
+    background: hotpink;
+}
+.middle-content .boxes .box.indigo{
+    background: indigo;
+}
+.middle-content .boxes .box.dodgerblue{
+    background: dodgerblue;
+}
+
+.middle-content.about{
+    border: none;
+
+}
+.middle-content.about .boxes{
+    justify-content: space-between;
+}
+.middle-content.about h2{
+    padding: 0;
+}
+
+.middle-content.about .test{
+    width:50%;
+    padding: 10px;
+    border-bottom: 1px dashed black;    
+}
+.middle-content.about .test div{
+    padding: 20px 0;
+}
+.middle-content.about a{
+    text-decoration: none;
+    color:black;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: inset 12px -12px 5px -10px black;
+    margin: 30px 0;
+    padding: 8px 25px;
+}
+.middle-content.about a:hover{
+    transition: 0.3s;
+    background: darkblue;
+    color: white;
+}
+.middle-content.about a:active{
+    transition: 0s;
+    background: white;
+    color:black;
+    box-shadow: inset -12px 12px 5px -10px black;
+}
+.middle-content.about p{
+    margin: 10px 0 30px 0;
+}
+
+
 .bottom-content {
+    opacity: 0;
+    animation: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
@@ -125,6 +261,17 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+.bottom-content.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px 2%;
+}
+
+/*~~~~~~~
+Footer
+~~~~~~~*/
 
 footer {
     width: 100%;
